@@ -52,10 +52,6 @@ small,
   background: var(--off-white);
 }
 
-.experience-stripe {
-  background: var(--white);
-}
-
 body {
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
@@ -65,6 +61,7 @@ body {
   line-height: 1.6;
 }
 
+/* Hero section */
 .hero {
   min-height: 100vh; /* full-screen */
   display: flex;
@@ -161,6 +158,47 @@ body {
   display: block;
 }
 
+/* Education section */
+.education .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.education-item {
+  border-left: 4px solid var(--accent-color);
+  padding-left: 1rem;
+}
+
+.degree {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  color: var(--text-main);
+}
+
+.institution {
+  font-size: 1rem;
+  color: var(--text-sub);
+  margin: 0;
+}
+
+.dates {
+  font-size: 0.9rem;
+  color: var(--text-sub);
+}
+.education-description {
+  margin-top: 0.5rem;
+  color: var(--text-sub);
+  line-height: 1.6;
+} 
+
 /* Experience section */
 .experience .container {
   max-width: 900px;
@@ -168,11 +206,15 @@ body {
   padding: 2rem;
 }
 
+.experience-stripe {
+  background: var(--white);
+}
+
 .experience-item {
   display: grid;
   grid-template-columns: 200px 1fr; /* Left meta, right content */
   gap: 2rem;
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 1.5rem 1rem;
   border-bottom: 1px solid var(--divider);
 }
 
@@ -222,6 +264,44 @@ body {
     margin-bottom: 1rem;
   }
 }
+
+/* Skills section */
+.skills-awards-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.skills-awards .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.skills-block,
+.awards-block {
+  flex: 1 1 300px;
+  padding-left: 1rem;
+}
+
+.block-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.skills-list,
+.awards-list {
+  list-style: disc inside;
+  color: var(--text-sub);
+  line-height: 1.6;
+  padding-left: 0;
+  margin: 0;
+}
+
 
 /* Contact section */
 .contact {
@@ -297,21 +377,20 @@ a:focus {
   text-align: center;
   padding: 2rem 0;
   background-color: var(--white);
-  color: var(--text-main); /* or any golden tone you want */
+  color: var(--text-main);
 }
 
 .icon-link {
   text-decoration: none;
-  color: inherit; /* keeps icon color clean */
+  color: inherit;
 }
 
-/* Optional: add hover effect for icons */
 .icon-link:hover {
-  color: var(--accent-color); /* your preferred color on hover */
+  color: var(--text-main); /* Use main text color for hover, or set a specific accent if defined */
 }
 
 .social-icons {
-  margin-bottom: 1rem;
+  margin: 1.5rem 0;
 }
 
 .social-icons a {
@@ -322,7 +401,7 @@ a:focus {
 }
 
 .social-icons a:hover {
-  color: var(--accent-color);
+  color: var(--text-main); /* Use main text color for hover, or set a specific accent if defined */
 }
 
 footer p {
@@ -335,5 +414,6 @@ footer a {
 }
 
 footer a:hover {
-  color: var(--accent-color);
+  color: var(--text-main);
 }
+
