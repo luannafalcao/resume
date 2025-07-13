@@ -1,0 +1,27 @@
+
+/* Sete Saberes */
+.setesaberes-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.setesaberes-cover img {
+  max-width: 100%;
+  margin: 2rem auto;
+  display: block;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.setesaberes-content {
+  line-height: 1.75;
+  font-size: 1.05rem;
+  color: var(--text-sub);
+}
+
+.setesaberes-content h3 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: var(--text-main);
+}
